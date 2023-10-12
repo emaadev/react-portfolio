@@ -5,13 +5,13 @@ import Button from "./Button";
 import "./ProjectCard.css";
 
 const ProjectCards = () => (
-  <div className={`${styles.flexCenter} flex-col sm:flex-row pt-[50px]`}>
+  <div
+    className={`${styles.flexCenter} flex-row flex-wrap gap-[15px] pt-[50px]`}
+  >
     {projectCards.map((Item, index) => (
       <div
         key={Item.id}
-        className={`flex flex-col justify-between portfolio-card w-[340px] h-[480px] rounded-[16px] px-[17px] py-[20px] mt-[20px] ${
-          index !== projectCards.length - 1 ? "sm:mr-[20px]" : "sm:mr-[0]"
-        }`}
+        className={`flex flex-col justify-between portfolio-card w-[320px] h-[480px] rounded-[16px] px-[17px] py-[20px] mt-[20px]`}
       >
         <motion.div
           className={`${styles.flexCenter} flex-row mb-[15px] portfolio-card rounded-[16px]`}

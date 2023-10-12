@@ -75,7 +75,7 @@ const Skills = () => {
       </div>
 
       <div>
-        <div className="cards flex justify-center items-center flex-col sm:flex-row gap-[30px] mt-[40px]">
+        <div className="cards flex justify-center items-center flex-row flex-wrap gap-[15px] mt-[40px]">
           {skills.map((skill) => (
             <motion.div
               key={skill.id}

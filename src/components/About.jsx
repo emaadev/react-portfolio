@@ -34,12 +34,14 @@ const About = () => (
       <article
         className={`flex items-center justify-center md:items-start md:justify-center flex-col mt-[40px] md:mt-0 flex-1 md:ml-[80px]`}
       >
-        <div className={`flex flex-col sm:flex-row mb-[20px]`}>
+        <div
+          className={`flex justify-center items-center flex-row flex-wrap gap-[5px] sm:gap-[15px] mb-[20px]`}
+        >
           <AnimatedCards />
         </div>
 
         <p
-          className={`${styles.paragraph} max-w-[300px] sm:max-w-[600px] mb-[20px] text-details`}
+          className={`${styles.paragraph} px-[30px] sm:max-w-[600px] mb-[20px] text-details`}
         >
           My purpose is make it real the things that you can imagine and always
           willing to contribute and give the best of myself to every single

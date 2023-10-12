@@ -11,7 +11,9 @@ const Contact = () => (
     <div
       className={`flex items-center justify-center md:items-start md:justify-center flex-col mt-[40px] flex-1`}
     >
-      <div className={`flex flex-col sm:flex-row mb-[20px]`}>
+      <div
+        className={`flex justify-center items-center gap-[20px] flex-row flex-wrap mb-[20px]`}
+      >
         <ContactCards />
       </div>
     </div>

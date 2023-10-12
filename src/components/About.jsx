@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 import AnimatedCards from "./AnimatedCards";
 
 const About = () => (
-  <section id="about" className={`${styles.flexCenter} flex-col pt-[150px]`}>
+  <section
+    id="about"
+    className={`nav-section ${styles.flexCenter} flex-col pt-[150px]`}
+  >
     <div className={`${styles.flexCenter} flex-col -mb-[20px]`}>
       <h4 className={`${styles.heading4}`}>Get To Know</h4>
       <h2 className={`${styles.heading2}`}>About Me</h2>
@@ -41,7 +44,7 @@ const About = () => (
         </div>
 
         <p
-          className={`${styles.paragraph} px-[30px] sm:max-w-[600px] mb-[20px] text-details`}
+          className={`${styles.paragraph} px-[30px] sm:px-0 sm:max-w-[600px] mb-[20px] text-details`}
         >
           My purpose is make it real the things that you can imagine and always
           willing to contribute and give the best of myself to every single

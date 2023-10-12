@@ -2,7 +2,10 @@ import styles from "../style";
 import ContactCards from "./ContactCards";
 
 const Contact = () => (
-  <section id="contact" className={`${styles.flexCenter} flex-col mb-[80px]`}>
+  <section
+    id="contact"
+    className={`nav-section ${styles.flexCenter} flex-col mb-[80px]`}
+  >
     <div className={`${styles.flexCenter} flex-col `}>
       <h4 className={`${styles.heading4}`}>Get In Touch</h4>
       <h2 className={`${styles.heading2}`}>Contact</h2>

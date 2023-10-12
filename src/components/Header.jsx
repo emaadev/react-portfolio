@@ -5,7 +5,7 @@ import SocialMedia from "./SocialMedia";
 import CV from "../assets/CV-Emanuel-Nunez.pdf";
 
 const Header = () => (
-  <header className={`m-auto max-w-[1500px]`}>
+  <header id="header" className={`nav-section m-auto max-w-[1500px]`}>
     <div
       className={`${styles.flexCenter} leading-5 text-center flex-col pt-40`}
     >

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <section
       id="footer"
-      className={`${styles.flexCenter} flex-col pb-[130px] bg-primary`}
+      className={`nav-section ${styles.flexCenter} flex-col pb-[130px] bg-primary`}
     >
       <div className={`${styles.flexCenter} flex-col -mb-[20px]`}>
         <h2

@@ -4,6 +4,11 @@ import navIcons from "../constants/index";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const sections = document.querySelectorAll(".nav-section");
+  const navSelect = document.querySelectorAll(".nav-icon");
+
+  window.addEventListener("scroll", () => {});
+
   const [active, setActive] = useState("home");
 
   return (
@@ -28,7 +33,7 @@ const Navbar = () => {
           onClick={() => {
             setActive(Icon.id);
           }}
-          className={`${styles.navElements} ${
+          className={`nav-icon ${styles.navElements} ${
             active === Icon.id ? "bg-background" : "bg-transparent"
           }`}
         >

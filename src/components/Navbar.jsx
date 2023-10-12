@@ -1,7 +1,7 @@
-import styles from "../style"
-import { useState } from "react"
-import navIcons from "../constants/index"
-import { motion } from "framer-motion"
+import styles from "../style";
+import { useState } from "react";
+import navIcons from "../constants/index";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [active, setActive] = useState("home");
@@ -16,25 +16,27 @@ const Navbar = () => {
         stiffness: 100,
         delay: 1,
         ease: "easeOut",
-        duration: 20
+        duration: 20,
       }}
     >
       {navIcons.map((Icon) => (
-        <motion.a  
+        <motion.a
           key={Icon.id}
           whileHover={{ scale: 1.3, y: -10 }}
-          transition={{ duration: .3, type: "spring", stiffness: 100 }}
-          href={Icon.href} 
-          onClick={()=>{
-            setActive(Icon.id)
+          transition={{ duration: 0.3, type: "spring", stiffness: 100 }}
+          href={Icon.href}
+          onClick={() => {
+            setActive(Icon.id);
           }}
-          className={`${styles.navElements} ${active === Icon.id ? "bg-background" : "bg-transparent"}`}
+          className={`${styles.navElements} ${
+            active === Icon.id ? "bg-background" : "bg-transparent"
+          }`}
         >
-          <Icon.iconType className={`${styles.navIcons}`} /> 
+          <Icon.iconType className={`${styles.navIcons}`} />
         </motion.a>
       ))}
     </motion.nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

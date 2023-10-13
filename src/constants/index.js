@@ -66,7 +66,7 @@ export const navIcons = [
     iconType: RiServiceLine,
   },
   {
-    id: "portolio",
+    id: "portfolio",
     href: "#portfolio",
     iconType: BiBook,
   },

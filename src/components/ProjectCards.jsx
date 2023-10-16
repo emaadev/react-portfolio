@@ -8,7 +8,7 @@ const ProjectCards = () => (
   <div
     className={`${styles.flexCenter} flex-row flex-wrap gap-[15px] pt-[50px]`}
   >
-    {projectCards.map((Item, index) => (
+    {projectCards.map((Item) => (
       <div
         key={Item.id}
         className={`flex flex-col justify-between portfolio-card w-[320px] h-[480px] rounded-[16px] px-[17px] py-[20px] mt-[20px]`}

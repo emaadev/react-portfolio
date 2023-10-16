@@ -1,5 +1,5 @@
 import styles from "../style";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import navIcons from "../constants/index";
 import { motion } from "framer-motion";
 
@@ -9,19 +9,17 @@ const Navbar = () => {
 
   const [active, setActive] = useState("home");
 
-  useEffect(() => {
-    window.onscroll = () => {
-      sections.forEach((section) => {
-        let top = window.scrollY;
-        let offset = section.offsetTop;
-        let id = section.getAttribute("id");
+  window.addEventListener("scroll", () => {
+    sections.forEach((section) => {
+      let top = window.scrollY;
+      let offset = section.offsetTop;
+      let id = section.getAttribute("id");
 
-        if (top + 600 >= offset) {
-          setActive(id);
-        }
-      });
-    };
-  }, [sections]);
+      if (top + 600 >= offset) {
+        setActive(id);
+      }
+    });
+  });
 
   return (
     <motion.nav

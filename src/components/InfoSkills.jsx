@@ -49,14 +49,16 @@ const InfoSkills = ({ selectedId, setSelectedId }) => {
             className={`${styles.paragraph} text-white text-[15px] text-left`}
           >
             <ul className="mt-[10px]">
-              {skills[skillSelector].value[0].description.map((item, index) => (
-                <motion.li
-                  key={index}
-                  className="text-backgroundVariant font-semibold leading-[25px]"
-                >
-                  · {item}
-                </motion.li>
-              ))}
+              {skills[skillSelector].value[0].description.map((item, index) => {
+                return (
+                  <motion.li
+                    key={index}
+                    className="text-backgroundVariant font-semibold leading-[25px]"
+                  >
+                    · {item}
+                  </motion.li>
+                );
+              })}
             </ul>
           </motion.p>
         </motion.div>

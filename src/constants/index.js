@@ -18,6 +18,7 @@ import { GrInProgress } from "react-icons/gr";
 import hooBank from "../assets/hoobank.png";
 import comingSoon from "../assets/coming-soon.jpg";
 import portfolio from "../assets/portfolio.jpg";
+import weatherApp from "../assets/weatherapp.jpg";
 import graphicDesign from "../assets/graphic-design.png";
 import webDevelopment from "../assets/web-development.png";
 import softSkills from "../assets/soft-skills.png";
@@ -209,7 +210,7 @@ export const projectCards = [
     id: "hoobank",
     title: "Web Design for a Digital Bank",
     description:
-      "Mockup for an electronic bank for cryptocurrencies and payments.",
+      "UI Design for an electronic bank for cryptocurrencies and payments.",
     img: hooBank,
     links: [
       {
@@ -235,6 +236,34 @@ export const projectCards = [
       {
         id: "tailwindcss",
         IconType: SiTailwindcss,
+      },
+    ],
+  },
+  {
+    id: "weather-app",
+    title: "Weather App",
+    description: "World Weather App with Maps",
+    img: weatherApp,
+    links: [
+      {
+        id: "github",
+        content: "Github",
+        state: true,
+        href: "https://github.com/emaadev/weather-app",
+        btnType: "alternativeBtn",
+      },
+      {
+        id: "demolive",
+        content: "Demo Live",
+        state: false,
+        href: "",
+        btnType: "variantBtn",
+      },
+    ],
+    iconTechnologies: [
+      {
+        id: "react",
+        IconType: FaReact,
       },
     ],
   },

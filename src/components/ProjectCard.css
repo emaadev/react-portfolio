@@ -1,3 +1,23 @@
 .projects path {
   stroke: #fff;
 }
+
+.projects svg.clock-animate {
+  animation-name: clock;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes clock {
+  0% {
+    transform: rotate(0turn);
+  }
+
+  50% {
+    transform: rotate(0.5turn);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
+}

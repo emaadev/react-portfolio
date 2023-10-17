@@ -6,7 +6,7 @@ import "./ProjectCard.css";
 
 const ProjectCards = () => (
   <div
-    className={`${styles.flexCenter} flex-row flex-wrap gap-[15px] pt-[50px]`}
+    className={`${styles.flexCenter} flex-row flex-wrap gap-[15px] pt-[50px] max-w-[1200px]`}
   >
     {projectCards.map((Item) => (
       <div
@@ -31,12 +31,23 @@ const ProjectCards = () => (
         <div
           className={`flex justify-start items-center flex-row mb-[5px] projects`}
         >
-          {Item.iconTechnologies.map((Icon) => (
-            <Icon.IconType
-              key={Icon.id}
-              className={`fill-white ml-[10px] w-[30px] h-[30px] my-[10px] object-contain`}
-            />
-          ))}
+          {Item.iconTechnologies.map((Icon) => {
+            if (Icon.id === "updating") {
+              return (
+                <Icon.IconType
+                  key={Icon.id}
+                  className={`fill-white ml-[10px] w-[30px] h-[30px] my-[10px] object-contain clock-animate`}
+                />
+              );
+            } else {
+              return (
+                <Icon.IconType
+                  key={Icon.id}
+                  className={`fill-white ml-[10px] w-[30px] h-[30px] my-[10px] object-contain`}
+                />
+              );
+            }
+          })}
         </div>
 
         <div
@@ -67,16 +78,6 @@ const ProjectCards = () => (
               );
             }
           })}
-          {/* <Button
-            href={Item.hrefGithub}
-            type={"alternativeBtn"}
-            content={"Github"}
-          />
-          <Button
-            href={Item.hrefLive}
-            type={"variantBtn"}
-            content={"Live Demo"}
-          /> */}
         </div>
       </div>
     ))}

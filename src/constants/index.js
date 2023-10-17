@@ -299,34 +299,6 @@ export const projectCards = [
       },
     ],
   },
-  // {
-  //   id: "portfolio-01",
-  //   title: "React Portfolio",
-  //   description: "See the files of this Web Portfolio",
-  //   img: hooBank,
-  //   links: [
-  //     {
-  //       id: "github",
-  //       state: true,
-  //       hrefGithub: "https://github.com/emaadev/hoobank",
-  //     },
-  //     {
-  //       id: "demolive",
-  //       state: true,
-  //       hrefLive: "https://emaadev.github.io/hoobank/",
-  //     },
-  //   ],
-  //   iconTechnologies: [
-  //     {
-  //       id: "react",
-  //       IconType: FaReact,
-  //     },
-  //     {
-  //       id: "tailwindcss",
-  //       IconType: SiTailwindcss,
-  //     },
-  //   ],
-  // },
   {
     id: "null",
     title: "In progress...",

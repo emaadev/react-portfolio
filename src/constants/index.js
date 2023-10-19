@@ -10,6 +10,10 @@ import { BiMessageSquareDetail } from "react-icons/bi";
 import { GiAchievement } from "react-icons/gi";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { BsFillPersonCheckFill } from "react-icons/bs";
+import { BiLogoPhp } from "react-icons/bi";
+import { FaBootstrap } from "react-icons/fa";
+import { BiLogoJquery } from "react-icons/bi";
+import { SiMysql } from "react-icons/si";
 
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
@@ -19,6 +23,7 @@ import hooBank from "../assets/hoobank.png";
 import comingSoon from "../assets/coming-soon.jpg";
 import portfolio from "../assets/portfolio.jpg";
 import weatherApp from "../assets/weatherapp.jpg";
+import fixdate from "../assets/fixdate.jpg";
 import graphicDesign from "../assets/graphic-design.png";
 import webDevelopment from "../assets/web-development.png";
 import softSkills from "../assets/soft-skills.png";
@@ -57,9 +62,9 @@ export const navIcons = [
     iconType: AiOutlineHome,
   },
   {
-    id: "about",
-    href: "#about",
-    iconType: AiOutlineUser,
+    id: "portfolio",
+    href: "#portfolio",
+    iconType: BiBook,
   },
   {
     id: "skills",
@@ -67,9 +72,9 @@ export const navIcons = [
     iconType: RiServiceLine,
   },
   {
-    id: "portfolio",
-    href: "#portfolio",
-    iconType: BiBook,
+    id: "about",
+    href: "#about",
+    iconType: AiOutlineUser,
   },
   {
     id: "contact",
@@ -206,6 +211,51 @@ export const contact = [
 ];
 
 export const projectCards = [
+  {
+    id: "fixdate",
+    title: "Fixdate Brazil",
+    description:
+      "I've been working on Front-End Projects for 2 years in this company.",
+    img: fixdate,
+    links: [
+      {
+        id: "github",
+        content: "Website",
+        state: true,
+        href: "https://fixdate.io/br",
+        btnType: "alternativeBtn",
+      },
+      {
+        id: "demolive",
+        content: "Demo Live",
+        state: false,
+        href: "https://emaadev.github.io/hoobank/",
+        btnType: "variantBtn",
+      },
+    ],
+    iconTechnologies: [
+      {
+        id: "php",
+        IconType: BiLogoPhp,
+      },
+      {
+        id: "jquery",
+        IconType: BiLogoJquery,
+      },
+      {
+        id: "mysql",
+        IconType: SiMysql,
+      },
+      {
+        id: "bootstrap",
+        IconType: FaBootstrap,
+      },
+      {
+        id: "react",
+        IconType: FaReact,
+      },
+    ],
+  },
   {
     id: "hoobank",
     title: "Web Design for a Digital Bank",

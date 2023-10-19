@@ -1,6 +1,6 @@
 import styles from "../style";
 import AboutMe from "../assets/about-me.jpg";
-import Button from "./Button";
+// import Button from "./Button";
 import { motion } from "framer-motion";
 import AnimatedCards from "./AnimatedCards";
 
@@ -58,11 +58,11 @@ const About = () => (
           <span className="text-primary font-semibold">I can create it.</span>
         </p>
 
-        <Button
+        {/* <Button
           type={""}
           content={"Contact Me!"}
           href={"mailto:emanuel.nu02@gmail.com"}
-        />
+        /> */}
       </article>
     </div>
   </section>

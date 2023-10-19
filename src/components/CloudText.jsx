@@ -32,7 +32,7 @@ const CloudTest = ({ className }) => {
         "SQL",
         "Framer Motion",
         "Figma",
-        "Jquery",
+        "jQuery",
         "PHP",
         "GIT",
         "GitHub",

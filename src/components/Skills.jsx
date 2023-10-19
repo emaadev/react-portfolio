@@ -12,7 +12,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className={`nav-section ${styles.flexCenter} flex-col pt-[100px] mb-[100px]`}
+      className={`nav-section ${styles.flexCenter} flex-col pt-[100px] mb-[50px]`}
     >
       <div className={`${styles.flexCenter} flex-col -mb-[20px]`}>
         <h4 className={`${styles.heading4}`}>My Personal</h4>

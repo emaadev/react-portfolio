@@ -7,7 +7,7 @@ import AnimatedCards from "./AnimatedCards";
 const About = () => (
   <section
     id="about"
-    className={`nav-section ${styles.flexCenter} flex-col pt-[150px]`}
+    className={`nav-section ${styles.flexCenter} flex-col pt-[100px] pb-[100px]`}
   >
     <div className={`${styles.flexCenter} flex-col -mb-[20px]`}>
       <h4 className={`${styles.heading4}`}>Get To Know</h4>

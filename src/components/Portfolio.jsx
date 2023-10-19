@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className={`nav-section ${styles.flexCenter} flex-col pt-[50px] mb-[100px]`}
+      className={`nav-section ${styles.flexCenter} flex-col pt-[150px] mb-[50px]`}
     >
       <div className={`${styles.flexCenter} flex-col -mb-[20px]`}>
         <h4 className={`${styles.heading4}`}>Work Experience</h4>

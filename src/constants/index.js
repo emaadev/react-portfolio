@@ -115,7 +115,7 @@ export const skills = [
           "NodeJS",
           "TailwindCSS",
           "SQL",
-          "Jquery",
+          "jQuery",
           "PHP",
           "Git",
           "GitHub",

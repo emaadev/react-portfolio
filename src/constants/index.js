@@ -24,6 +24,7 @@ import comingSoon from "../assets/coming-soon.jpg";
 import portfolio from "../assets/portfolio.jpg";
 import weatherApp from "../assets/weatherapp.jpg";
 import fixdate from "../assets/fixdate.jpg";
+import financeManager from "../assets/finance-manager.jpg";
 import graphicDesign from "../assets/graphic-design.png";
 import webDevelopment from "../assets/web-development.png";
 import softSkills from "../assets/soft-skills.png";
@@ -215,7 +216,7 @@ export const projectCards = [
     id: "fixdate",
     title: "Fixdate Brazil",
     description:
-      "I've been working on Front-End Projects for 2 years in this company.",
+      "I've been working on Front-End Projects for 2 years in this company",
     img: fixdate,
     links: [
       {
@@ -257,10 +258,42 @@ export const projectCards = [
     ],
   },
   {
+    id: "finance-manager",
+    title: "Finance Manager",
+    description: "Expenses and Incomes Manager for personal use",
+    img: financeManager,
+    links: [
+      {
+        id: "github",
+        content: "Github",
+        state: true,
+        href: "https://github.com/emaadev/finance-manager",
+        btnType: "alternativeBtn",
+      },
+      {
+        id: "demolive",
+        content: "Demo Live",
+        state: true,
+        href: "https://emaadev.github.io/finance-manager/",
+        btnType: "variantBtn",
+      },
+    ],
+    iconTechnologies: [
+      {
+        id: "react",
+        IconType: FaReact,
+      },
+      {
+        id: "tailwindcss",
+        IconType: SiTailwindcss,
+      },
+    ],
+  },
+  {
     id: "hoobank",
     title: "Web Design for a Digital Bank",
     description:
-      "UI Design for an electronic bank for cryptocurrencies and payments.",
+      "UI Design for an electronic bank for cryptocurrencies and payments",
     img: hooBank,
     links: [
       {

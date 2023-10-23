@@ -1,5 +1,5 @@
 import styles from "../style";
-import AboutMe from "../assets/about-me.jpg";
+import AboutMe from "../assets/about-me.png";
 // import Button from "./Button";
 import { motion } from "framer-motion";
 import AnimatedCards from "./AnimatedCards";

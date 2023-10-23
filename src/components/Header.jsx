@@ -2,7 +2,7 @@ import styles from "../style";
 import Button from "./Button";
 import Me from "../assets/me.png";
 import SocialMedia from "./SocialMedia";
-import CV from "../assets/CV-Emanuel-Nunez.pdf";
+import CV from "../assets/Resume.pdf";
 
 const Header = () => (
   <header id="home" className={`nav-section m-auto max-w-[1500px]`}>

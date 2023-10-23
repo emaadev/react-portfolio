@@ -25,7 +25,7 @@ const ProjectCards = () => (
           />
         </motion.div>
         <h5 className={`${styles.heading5}`}>{Item.title}</h5>
-        <p className={`${styles.paragraph} leading-[21px]`}>
+        <p className={`${styles.paragraph} !leading-[21px]`}>
           {Item.description}
         </p>
         <div

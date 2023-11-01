@@ -18,11 +18,14 @@ import { SiMysql } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { GrInProgress } from "react-icons/gr";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress, SiStreamlit } from "react-icons/si";
 
 import hooBank from "../assets/hoobank.png";
 import comingSoon from "../assets/coming-soon.jpg";
 import portfolio from "../assets/portfolio.jpg";
-import weatherApp from "../assets/weatherapp.jpg";
+// import weatherApp from "../assets/weatherapp.jpg";
+import liveChatApp from "../assets/live-chat-app.jpg";
 import fixdate from "../assets/fixdate.jpg";
 import financeManager from "../assets/finance-manager.jpg";
 import graphicDesign from "../assets/graphic-design.png";
@@ -213,6 +216,84 @@ export const contact = [
 
 export const projectCards = [
   {
+    id: "live-chat-app",
+    title: "Live Chat App",
+    description:
+      "Full Stack Live Chat App with Login Auth using ReactJS, NodeJS, Express & Stream API",
+    img: liveChatApp,
+    links: [
+      {
+        id: "github",
+        content: "Github",
+        state: true,
+        href: "https://github.com/emaadev/live-chat-app",
+        btnType: "alternativeBtn",
+      },
+      {
+        id: "demolive",
+        content: "Demo Live",
+        state: true,
+        href: "https://live-chat-app-project.netlify.app/",
+        btnType: "variantBtn",
+      },
+    ],
+    iconTechnologies: [
+      {
+        id: "react",
+        IconType: FaReact,
+      },
+      {
+        id: "tailwindcss",
+        IconType: SiTailwindcss,
+      },
+      {
+        id: "nodejs",
+        IconType: FaNodeJs,
+      },
+      {
+        id: "express",
+        IconType: SiExpress,
+      },
+      {
+        id: "streamapi",
+        IconType: SiStreamlit,
+      },
+    ],
+  },
+  {
+    id: "hoobank",
+    title: "Web Design for a Digital Bank",
+    description:
+      "UI Design for an electronic bank for cryptocurrencies and payments",
+    img: hooBank,
+    links: [
+      {
+        id: "github",
+        content: "Github",
+        state: true,
+        href: "https://github.com/emaadev/hoobank",
+        btnType: "alternativeBtn",
+      },
+      {
+        id: "demolive",
+        content: "Demo Live",
+        state: true,
+        href: "https://emaadev.github.io/hoobank/",
+        btnType: "variantBtn",
+      },
+    ],
+    iconTechnologies: [
+      {
+        id: "react",
+        IconType: FaReact,
+      },
+      {
+        id: "tailwindcss",
+        IconType: SiTailwindcss,
+      },
+    ],
+  },
+  {
     id: "fixdate",
     title: "Fixdate Brazil",
     description:
@@ -289,67 +370,34 @@ export const projectCards = [
       },
     ],
   },
-  {
-    id: "hoobank",
-    title: "Web Design for a Digital Bank",
-    description:
-      "UI Design for an electronic bank for cryptocurrencies and payments",
-    img: hooBank,
-    links: [
-      {
-        id: "github",
-        content: "Github",
-        state: true,
-        href: "https://github.com/emaadev/hoobank",
-        btnType: "alternativeBtn",
-      },
-      {
-        id: "demolive",
-        content: "Demo Live",
-        state: true,
-        href: "https://emaadev.github.io/hoobank/",
-        btnType: "variantBtn",
-      },
-    ],
-    iconTechnologies: [
-      {
-        id: "react",
-        IconType: FaReact,
-      },
-      {
-        id: "tailwindcss",
-        IconType: SiTailwindcss,
-      },
-    ],
-  },
-  {
-    id: "weather-app",
-    title: "Weather App",
-    description: "World Weather App with Maps",
-    img: weatherApp,
-    links: [
-      {
-        id: "github",
-        content: "Github",
-        state: true,
-        href: "https://github.com/emaadev/weather-app",
-        btnType: "alternativeBtn",
-      },
-      {
-        id: "demolive",
-        content: "Demo Live",
-        state: false,
-        href: "",
-        btnType: "variantBtn",
-      },
-    ],
-    iconTechnologies: [
-      {
-        id: "react",
-        IconType: FaReact,
-      },
-    ],
-  },
+  // {
+  //   id: "weather-app",
+  //   title: "Weather App",
+  //   description: "World Weather App with Maps",
+  //   img: weatherApp,
+  //   links: [
+  //     {
+  //       id: "github",
+  //       content: "Github",
+  //       state: true,
+  //       href: "https://github.com/emaadev/weather-app",
+  //       btnType: "alternativeBtn",
+  //     },
+  //     {
+  //       id: "demolive",
+  //       content: "Demo Live",
+  //       state: false,
+  //       href: "",
+  //       btnType: "variantBtn",
+  //     },
+  //   ],
+  //   iconTechnologies: [
+  //     {
+  //       id: "react",
+  //       IconType: FaReact,
+  //     },
+  //   ],
+  // },
   {
     id: "portfolio-01",
     title: "React Portfolio",

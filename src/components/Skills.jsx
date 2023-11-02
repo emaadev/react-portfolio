@@ -32,7 +32,7 @@ const Skills = () => {
             <br /> & Graphic Designer
           </h4>
           <p
-            className={`${styles.paragraph} leading-[25px] text-details font-normal max-w-[320px] sm:max-w-[600px] mt-[20px] mb-[20px] sm:mr-[25px]`}
+            className={`${styles.paragraph} leading-[25px] text-white font-normal max-w-[320px] sm:max-w-[600px] mt-[20px] mb-[20px] sm:mr-[25px]`}
           >
             I am dedicated to the development of audiovisual products with
             several years of experience in Graphic Design and professional

@@ -44,11 +44,13 @@ const About = () => (
         </div>
 
         <p
-          className={`${styles.paragraph} px-[30px] sm:px-0 sm:max-w-[600px] mb-[20px] text-details`}
+          className={`${styles.paragraph} px-[30px] sm:px-0 sm:max-w-[600px] mb-[20px] text-white`}
         >
-          My purpose is make it real the things that you can imagine and always
-          willing to contribute and give the best of myself to every single
-          project to reach the goal.
+          Enthusiastic and highly-disciplined Front End Developer with 3+ years
+          of professional experience. Skilled in Adobe CC, patterns design and
+          layout techniques. Seeking to develop creative solutions by designing
+          and implementing streamlined procedures to improve performance and
+          style.
           <br />
           <br />
           <span className="text-white font-semibold">

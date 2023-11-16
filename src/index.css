@@ -17,6 +17,6 @@ body {
   /* background-color: var(--bg-primary);
   background-image: var(--bg-image);
   background-attachment: fixed;
-    */ background-color: #101016;
-      background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #1f1f38 12px), repeating-linear-gradient(#6971ff5d, #164b9b76);
+    */ background-color: rgb(2, 2, 4);
+      background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #040407 12px), repeating-linear-gradient(#6971ff5d, #164b9b76);
 }

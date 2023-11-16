@@ -1,33 +1,40 @@
-import { BsLinkedin } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
-import { BiLogoGmail } from "react-icons/bi";
+import { BsLinkedin, BsGithub, BsFillPersonCheckFill } from "react-icons/bs";
+import {
+  BiLogoGmail,
+  BiLogoTypescript,
+  BiBook,
+  BiMessageSquareDetail,
+  BiLogoPhp,
+  BiLogoJquery,
+} from "react-icons/bi";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { AiOutlineHome } from "react-icons/ai";
-import { AiOutlineUser } from "react-icons/ai";
-import { BiBook } from "react-icons/bi";
+import {
+  AiOutlineHome,
+  AiOutlineUser,
+  AiOutlineFundProjectionScreen,
+} from "react-icons/ai";
 import { RiServiceLine } from "react-icons/ri";
-import { BiMessageSquareDetail } from "react-icons/bi";
 import { GiAchievement } from "react-icons/gi";
-import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { BsFillPersonCheckFill } from "react-icons/bs";
-import { BiLogoPhp } from "react-icons/bi";
-import { FaBootstrap } from "react-icons/fa";
-import { BiLogoJquery } from "react-icons/bi";
-import { SiMysql } from "react-icons/si";
+import { FaBootstrap, FaReact, FaNodeJs } from "react-icons/fa";
+import {
+  SiMysql,
+  SiReactquery,
+  SiAppwrite,
+  SiTailwindcss,
+  SiExpress,
+  SiStreamlit,
+} from "react-icons/si";
 
-import { FaReact } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
 import { GrInProgress } from "react-icons/gr";
-import { FaNodeJs } from "react-icons/fa";
-import { SiExpress, SiStreamlit } from "react-icons/si";
 
 import hooBank from "../assets/hoobank.png";
 import comingSoon from "../assets/coming-soon.jpg";
-import portfolio from "../assets/portfolio.jpg";
+// import portfolio from "../assets/portfolio.jpg";
 // import weatherApp from "../assets/weatherapp.jpg";
 import liveChatApp from "../assets/live-chat-app.jpg";
 import fixdate from "../assets/fixdate.jpg";
-import financeManager from "../assets/finance-manager.jpg";
+// import financeManager from "../assets/finance-manager.jpg";
+import socialMediaApp from "../assets/social-media-app.jpg";
 import graphicDesign from "../assets/graphic-design.png";
 import webDevelopment from "../assets/web-development.png";
 import softSkills from "../assets/soft-skills.png";
@@ -216,10 +223,54 @@ export const contact = [
 
 export const projectCards = [
   {
+    id: "postit-social-app",
+    title: "Social Media App",
+    description:
+      "Full Stack Social Media App using ReactJS, React Query, TypeScript & Appwrite",
+    img: socialMediaApp,
+    links: [
+      {
+        id: "github",
+        content: "Github",
+        state: true,
+        href: "https://github.com/emaadev/postit-social-app",
+        btnType: "alternativeBtn",
+      },
+      {
+        id: "demolive",
+        content: "Demo Live",
+        state: true,
+        href: "https://postit-nine-eta.vercel.app/",
+        btnType: "variantBtn",
+      },
+    ],
+    iconTechnologies: [
+      {
+        id: "react",
+        IconType: FaReact,
+      },
+      {
+        id: "typescript",
+        IconType: BiLogoTypescript,
+      },
+      {
+        id: "reactquery",
+        IconType: SiReactquery,
+      },
+      {
+        id: "appwrite",
+        IconType: SiAppwrite,
+      },
+      {
+        id: "tailwindcss",
+        IconType: SiTailwindcss,
+      },
+    ],
+  },
+  {
     id: "live-chat-app",
     title: "Live Chat App",
-    description:
-      "Full Stack Live Chat App with Login Auth using ReactJS, NodeJS, Express & Stream API",
+    description: "Full Stack Live Chat App using ReactJS, NodeJS & Express",
     img: liveChatApp,
     links: [
       {
@@ -338,38 +389,38 @@ export const projectCards = [
       },
     ],
   },
-  {
-    id: "finance-manager",
-    title: "Finance Manager",
-    description: "Expenses and Incomes Manager for personal use",
-    img: financeManager,
-    links: [
-      {
-        id: "github",
-        content: "Github",
-        state: true,
-        href: "https://github.com/emaadev/finance-manager",
-        btnType: "alternativeBtn",
-      },
-      {
-        id: "demolive",
-        content: "Demo Live",
-        state: true,
-        href: "https://emaadev.github.io/finance-manager/",
-        btnType: "variantBtn",
-      },
-    ],
-    iconTechnologies: [
-      {
-        id: "react",
-        IconType: FaReact,
-      },
-      {
-        id: "tailwindcss",
-        IconType: SiTailwindcss,
-      },
-    ],
-  },
+  // {
+  //   id: "finance-manager",
+  //   title: "Finance Manager",
+  //   description: "Expenses and Incomes Manager for personal use",
+  //   img: financeManager,
+  //   links: [
+  //     {
+  //       id: "github",
+  //       content: "Github",
+  //       state: true,
+  //       href: "https://github.com/emaadev/finance-manager",
+  //       btnType: "alternativeBtn",
+  //     },
+  //     {
+  //       id: "demolive",
+  //       content: "Demo Live",
+  //       state: true,
+  //       href: "https://emaadev.github.io/finance-manager/",
+  //       btnType: "variantBtn",
+  //     },
+  //   ],
+  //   iconTechnologies: [
+  //     {
+  //       id: "react",
+  //       IconType: FaReact,
+  //     },
+  //     {
+  //       id: "tailwindcss",
+  //       IconType: SiTailwindcss,
+  //     },
+  //   ],
+  // },
   // {
   //   id: "weather-app",
   //   title: "Weather App",
@@ -398,38 +449,38 @@ export const projectCards = [
   //     },
   //   ],
   // },
-  {
-    id: "portfolio-01",
-    title: "React Portfolio",
-    description: "See the code of this Web Portfolio",
-    img: portfolio,
-    links: [
-      {
-        id: "github",
-        content: "Github",
-        state: true,
-        href: "https://github.com/emaadev/react-portfolio",
-        btnType: "alternativeBtn",
-      },
-      {
-        id: "demolive",
-        content: "Demo Live",
-        state: false,
-        href: "https://emanuel-nunez.online/",
-        btnType: "variantBtn",
-      },
-    ],
-    iconTechnologies: [
-      {
-        id: "react",
-        IconType: FaReact,
-      },
-      {
-        id: "tailwindcss",
-        IconType: SiTailwindcss,
-      },
-    ],
-  },
+  // {
+  //   id: "portfolio-01",
+  //   title: "React Portfolio",
+  //   description: "See the code of this Web Portfolio",
+  //   img: portfolio,
+  //   links: [
+  //     {
+  //       id: "github",
+  //       content: "Github",
+  //       state: true,
+  //       href: "https://github.com/emaadev/react-portfolio",
+  //       btnType: "alternativeBtn",
+  //     },
+  //     {
+  //       id: "demolive",
+  //       content: "Demo Live",
+  //       state: false,
+  //       href: "https://emanuel-nunez.online/",
+  //       btnType: "variantBtn",
+  //     },
+  //   ],
+  //   iconTechnologies: [
+  //     {
+  //       id: "react",
+  //       IconType: FaReact,
+  //     },
+  //     {
+  //       id: "tailwindcss",
+  //       IconType: SiTailwindcss,
+  //     },
+  //   ],
+  // },
   {
     id: "null",
     title: "In progress...",

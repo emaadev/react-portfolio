@@ -1,5 +1,6 @@
 import TagCloud from "@frank-mayer/react-tag-cloud";
 import propTypes from "prop-types";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const CloudTest = ({ className }) => {
   var cloudRadius = 230;
@@ -23,8 +24,9 @@ const CloudTest = ({ className }) => {
       onClickOptions={{ passive: true }}
     >
       {[
-        "HTML",
-        "CSS",
+        "HTML5",
+        "CSS3",
+        "Sass",
         "JavaScript",
         "TypeScript",
         "ReactJS",

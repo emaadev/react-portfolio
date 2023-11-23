@@ -15,7 +15,13 @@ import {
 } from "react-icons/ai";
 import { RiServiceLine } from "react-icons/ri";
 import { GiAchievement } from "react-icons/gi";
-import { FaBootstrap, FaReact, FaNodeJs } from "react-icons/fa";
+import {
+  FaBootstrap,
+  FaReact,
+  FaNodeJs,
+  FaSass,
+  FaCcStripe,
+} from "react-icons/fa";
 import {
   SiMysql,
   SiReactquery,
@@ -33,6 +39,7 @@ import comingSoon from "../assets/coming-soon.jpg";
 // import weatherApp from "../assets/weatherapp.jpg";
 import liveChatApp from "../assets/live-chat-app.jpg";
 import fixdate from "../assets/fixdate.jpg";
+import gucciApp from "../assets/gucci-ecommerce-app.jpg";
 // import financeManager from "../assets/finance-manager.jpg";
 import socialMediaApp from "../assets/social-media-app.jpg";
 import graphicDesign from "../assets/graphic-design.png";
@@ -123,18 +130,19 @@ export const skills = [
         title: "Web Development",
         button: "Tap for details",
         description: [
+          "HTML5",
           "CSS3",
           "Bootstrap",
+          "Sass",
           "JavaScript",
           "TypeScript",
           "ReactJS",
           "NodeJS",
           "TailwindCSS",
-          "SQL",
+          "MySql",
           "jQuery",
           "PHP",
           "Git",
-          "GitHub",
         ],
         src: webDevelopment,
       },
@@ -222,6 +230,43 @@ export const contact = [
 ];
 
 export const projectCards = [
+  {
+    id: "gucci-ecommerce-app",
+    title: "Gucci Ecommerce App",
+    description:
+      "Full Stack Web for Gucci using ReactJS, Sass and Stripe (In Progress)",
+    img: gucciApp,
+    links: [
+      {
+        id: "github",
+        content: "Github",
+        state: true,
+        href: "https://github.com/emaadev/gucci-ecommerce-app",
+        btnType: "alternativeBtn",
+      },
+      {
+        id: "demolive",
+        content: "Demo Live",
+        state: true,
+        href: "https://655f3dd4e48e777aa8716405--prismatic-biscochitos-e0eae4.netlify.app/",
+        btnType: "variantBtn",
+      },
+    ],
+    iconTechnologies: [
+      {
+        id: "react",
+        IconType: FaReact,
+      },
+      {
+        id: "sass",
+        IconType: FaSass,
+      },
+      {
+        id: "stripe",
+        IconType: FaCcStripe,
+      },
+    ],
+  },
   {
     id: "postit-social-app",
     title: "Social Media App",
